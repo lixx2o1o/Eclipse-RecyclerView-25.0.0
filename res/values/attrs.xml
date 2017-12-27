@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RecyclerView">
+
+        <!--
+Class name of the Layout Manager to be used.
+20        <p/>
+21        The class must extend android.support.v7.widget.RecyclerView$LayoutManager
+22        and have either a default constructor or constructor with the signature
+23        (android.content.Context, android.util.AttributeSet, int, int).
+24         <p/>
+25         If the name starts with a '.', application package is prefixed.
+26         Else, if the name contains a '.', the classname is assumed to be a full class name.
+27         Else, the recycler view package name (android.support.v7.widget) is prefixed.
+        -->
+        <attr name="layoutManager" format="string" />
+
+        <!-- ============================= -->
+        <!-- Attributes for Layout Manager -->
+        <!-- ============================= -->
+        <eat-comment />
+
+        <attr name="android:orientation" />
+        <attr name="android:descendantFocusability" />
+        <attr name="spanCount" format="integer" />
+        <attr name="reverseLayout" format="boolean" />
+        <attr name="stackFromEnd" format="boolean" />
+    </declare-styleable>
+
+</resources>
